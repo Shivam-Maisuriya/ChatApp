@@ -10,25 +10,24 @@ function Right() {
   useEffect(() => {
     return setSelectedConversation(null);
   }, [setSelectedConversation]);
-
   return (
-    <div className=" w-[70%] bg-slate-900 text-gray-300">
-      {!selectedConversation ? (
-        <NoChatSelected />
-      ) : (
-        <>
-          <div >
+    <div className="w-full bg-slate-900 text-gray-300">
+      <div>
+        {!selectedConversation ? (
+          <NoChatSelected />
+        ) : (
+          <>
             <Chatuser />
             <div
               className="hide-scrollbar overflow-auto"
-              style={{ maxHeight: " calc(92vh - 8vh) " }}
+              style={{ maxHeight: "calc(92vh - 8vh)" }}
             >
               <Messages />
             </div>
             <Typesend />
-          </div>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

@@ -5,11 +5,11 @@ import Logout from "./Logout";
 
 function Left() {
   return (
-    <div className=" w-[30%] bg-black text-gray-300">
+    <div className="w-full   bg-black text-gray-300">
       <Search />
       <div
         className="hide-scrollbar overflow-auto"
-        style={{ minHeight: " calc(84vh - 4vh) " }}
+        style={{ minHeight: " calc(84vh - 10vh) " }}
       >
         <Users />
       </div>
